@@ -1,2 +1,2 @@
 # Alexa
-Alexa Was Helping Bot😊
+Alexa Is A Helping Bot😊
