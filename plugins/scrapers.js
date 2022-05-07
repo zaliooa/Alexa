@@ -8,6 +8,7 @@ const Alexa = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
+const {skbuffer} = require('../buffer');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
 const Heroku = require('heroku-client');
@@ -942,7 +943,7 @@ else if (config.WORKTYPE == 'public') {
                 writer.addTag();
 
                 reply = await message.client.sendMessage(message.jid,config.SONGU,MessageType.text);
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio,contextInfo: { forwardingScore: 2, isForwarded: true }, quoted: message.data, ptt: false});
+                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
             });
     }));
 
@@ -1040,7 +1041,7 @@ else if (config.WORKTYPE == 'public') {
     }));
 
     Alexa.addCommand({pattern: 'owner', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
-
+    var img = await skbuffer(Config.LOGOSK)
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Config.OWNER + '\n' //created afnanplk, please copy this with credit..
@@ -1082,7 +1083,7 @@ await message.client.sendMessage(message.jid, {displayname: "'+Config.BOT+'", vc
     }));
     
     Alexa.addCommand({pattern: 'git', fromMe: false, desc: Lang.NUMBER}, (async (message, match) => {
-
+    var img = await skbuffer(Config.LOGOSK)
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Config.OWNER + '\n' //created afnanplk, please copy this with credit..
