@@ -155,6 +155,11 @@
             "required": false,
             "value": "false"
         },
+        "VERIFIED": {
+            "description": "Give with number jid",
+            "required": true,
+            "value": "91917025994178@s.whatsapp.net"
+        },
         "UNMUTE_MESSAGE": {
             "description": "Customizable Unmute Message! Use => default, to change back.",
             "required": false,
