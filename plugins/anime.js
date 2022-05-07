@@ -1,14 +1,18 @@
 
-const Alexa = require('../events');
+const Asena = require('../events');
+
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+
 const axios = require('axios');
+
 const Config = require('../config');
+
 const {skbuffer} = require('../buffer');
 
 if (Config.WORKTYPE == 'private') {
 
     Alexa.addCommand({pattern: 'anime', fromMe: true, desc: 'random anime image'}, (async (message, match) => {
-
+    var img = await skbuffer(Config.LOGOSK)
     var r_text = new Array ();
 
     r_text[0] = "https://i.ibb.co/FwPP04q/images.jpg";
@@ -95,15 +99,16 @@ if (Config.WORKTYPE == 'private') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALL})
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
     }));
+
 }
+
 else if (Config.WORKTYPE == 'public') {
 
     Alexa.addCommand({pattern: 'anime', fromMe: false, desc:'random anime image '}, (async (message, match) => {
     var img = await skbuffer(Config.LOGOSK)
-    
     var r_text = new Array ();
 
     r_text[0] = "https://i.ibb.co/FwPP04q/images.jpg";
@@ -190,6 +195,8 @@ else if (Config.WORKTYPE == 'public') {
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
-}));
+    }));
+
+}
