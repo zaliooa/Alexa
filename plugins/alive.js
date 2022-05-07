@@ -8,7 +8,6 @@ const request = require('request');
 const os = require('os');
 const hrs = new Date().getHours({ timeZone: 'Asia/Kolkata' })
 const image = require('../buffer');
-var img = image.skbuffer(Config.LOGOSK)
 var clh = { cd: 'L2pzbC9BbGV4YQ', pay: '' }    
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
