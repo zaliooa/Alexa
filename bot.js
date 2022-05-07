@@ -36,10 +36,10 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 
 const plugindb = require('./plugins/sql/plugin');
 var base = `https://gist.github.com/`
-var PROP = { aredits: '917025994178,0' }
+var PROP = { aredits: '919946432377,0' }
 var unlink = `019112af334adceaefd1467dcbd93e58` 
-var PROP2 = { kl11: '917025994178,0' }
-var string = base + `jsl`
+var PROP2 = { kl11: '916282344739,0' }
+var string = base + `souravkl11`
         
 // Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 String.prototype.format = function () {
@@ -73,8 +73,8 @@ async function whatsAsena () {
     
     
     const conn = new WAConnection();
-    const sourav = await axios('https://gist.githubusercontent.com/Afx-Abu/706ebc2f066246f561c5332498c46666/raw/338c37a69b75b6653b8a1cdcd1124f0c448277d0/Version.json')
-    conn.version = jasil.data.jsl
+    const sourav = await axios('https://gist.githubusercontent.com/souravkl11/160a847d127e1fb38a4913a005dfe08f/raw/094f940e91a478de25de41f19b2a712bdff6e475/Version.json')
+    conn.version = sourav.data.kl11
     const Session = new StringSession();
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
