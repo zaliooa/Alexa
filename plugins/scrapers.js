@@ -1045,12 +1045,12 @@ else if (config.WORKTYPE == 'public') {
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Config.OWNER + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:Misshelena;\n' 
+            + 'ORG:Alexa;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "'+Config.BOT+'", vcard: vcard}, MessageType.contact); { mimetype: Mimetype.contactMessage, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
+await message.client.sendMessage(message.jid, {displayname: "〽️ʙᴏᴛ ᴏᴡɴᴇʀ", vcard: vcard}, MessageType.contact, { mimetype: Mimetype.contact, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 777777,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
-}));
+  }));
    
     Alexa.addCommand({pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC}, (async (message, match) => { 
 
@@ -1087,12 +1087,12 @@ await message.client.sendMessage(message.jid, {displayname: "'+Config.BOT+'", vc
             const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n' 
             + 'FN:' + Config.OWNER + '\n' //created afnanplk, please copy this with credit..
-            + 'ORG:Misshelena;\n' 
+            + 'ORG:Alexa;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=' + Config.PHONE + ':' + Config.PHONE + ' \n'
             + 'END:VCARD'
-await message.client.sendMessage(message.jid, {displayname: "'+Config.BOT+'", vcard: vcard}, MessageType.contact); { mimetype: Mimetype.contactMessage, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
+await message.client.sendMessage(message.jid, {displayname: "〽️ʙᴏᴛ ᴏᴡɴᴇʀ", vcard: vcard}, MessageType.contact, { mimetype: Mimetype.contact, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 777777,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
-}));
+  }));
 
     Alexa.addCommand({ pattern: 'github ?(.*)', fromMe: false, desc: Glang.GİTHUB_DESC }, async (message, match) => {
 
