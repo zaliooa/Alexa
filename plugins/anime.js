@@ -1,5 +1,5 @@
 
-const Asena = require('../events');
+const Alexa = require('../events');
 
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 
