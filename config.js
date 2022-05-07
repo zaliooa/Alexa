@@ -34,7 +34,7 @@ module.exports = {
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
     PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     AFPLK: process.env.YT_PASSWORD === undefined ? false : process.env.YT_PASSWORD,
-    ABU_SER: process.env.ALIVE_BUTTON === undefined ? ʜɪ/ʙʀᴏ' : process.env.ALIVE_BUTTON,
+    ABU_SER: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ/ʙʀᴏ' : process.env.ALIVE_BUTTON,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
