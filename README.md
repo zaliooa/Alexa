@@ -47,3 +47,8 @@ https://heroku.com/deploy?template=https://github.com/Afx-Abu/Alexa
 ``` 
 6. Now change Afx-Abu with your github username and click ENJOY<br>
    <br>
+# Contact for help:
+   * Click [Contact](https://wa.me/7025994178?text=Need+Help🙂) Here For Contact Afx-Abu
+# Contact for help:
+   * Click [Contact](https://wa.me/9567489404?text=Need+Help🙂) Here For Contact Shefin 
+
