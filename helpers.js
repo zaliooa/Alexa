@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *Alexa*:  ```" + msg + "```"
+    return "✅ *𝕯İ𝕰扎里奧*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *Alexa*:  ```" + msg + "```"
+    return "🛑 *𝕯İ𝕰扎里奧*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *Alexa*:  ```" + msg + "```"
+    return "⏺️ *𝕯İ𝕰扎里奧*:  ```" + msg + "```"
 }
 
 
