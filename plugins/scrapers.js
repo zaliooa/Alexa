@@ -889,7 +889,7 @@ else if (config.WORKTYPE == 'public') {
 
     
     Alexa.addCommand({pattern: 'tts (.*)', fromMe: false, desc: Lang.TTS_DESC}, (async (message, match) => {
-
+    var img = await skbuffer(Config.LOGOSK)
         if(match[1] === undefined || match[1] == "")
             return;
     
@@ -1009,7 +1009,7 @@ else if (config.WORKTYPE == 'public') {
     
     
     Alexa.addCommand({pattern: 'song ?(.*)', fromMe: false, desc: Lang.ISONG_DESC}, (async (message, match) => { 
-
+    var img = await skbuffer(Config.LOGOSK)
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
         let arama = await yts(match[1]);
         arama = arama.all;
