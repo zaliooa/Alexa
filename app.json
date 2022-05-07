@@ -41,11 +41,6 @@
             "required": true,
             "value": "ᴀʟᴇxᴀ ᴡᴀ ʙᴏᴛ ʙʏ ᴀʙᴜ"
         },
-        "VERIFIED": {
-            "description": "Give with number jid",
-            "required": true,
-            "value": "0@s.whatsapp.net"
-        },
         "ALL_IMG": {
             "description": "Set the logo",
             "required": true,
@@ -54,7 +49,7 @@
         "ALIVE_BUTTON": {
             "description": "Set the Botton",
             "required": true,
-            "value": "ʜɪ"
+            "value": "ʜɪ/ʜᴇʟʟᴏ"
         },
         "DIALOGUE": {
             "description": "set the Dialouge",
