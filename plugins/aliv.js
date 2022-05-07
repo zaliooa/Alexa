@@ -28,7 +28,7 @@ if (hrs >= 15 && hrs <= 18) wish = '𝙶𝙾𝙾𝙳 𝙴𝚅𝙰𝙽𝙸𝙽�
 if (hrs >= 18 && hrs <= 23) wish = '𝙶𝙾𝙾𝙳 𝙽𝙸𝙶𝚃𝙷🌙'
 
     const buttons = [
-        {buttonId: 'id1', buttonText: {displayText: Config.ALEXAALIVE_BUTTON }, type: 1},
+        {buttonId: 'id1', buttonText: {displayText: Config.ALEXAALIVE }, type: 1},
         {buttonId: 'id2', buttonText: {displayText: Config.ABU }, type: 1}
       ]
       
