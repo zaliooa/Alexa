@@ -28,6 +28,7 @@ if (hrs >= 18 && hrs <= 23) wish = 'ɢᴏᴏᴅ ɴɪɢᴛʜ🌙'
 let whb = Config.WORKTYPE == 'public' ? false : true
 
 Alexa.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+var img = await skbuffer(Config.LOGOSK)
 // send a buttons message!credit Abu
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: sk1 }, type: 1},
