@@ -54,7 +54,7 @@
         "ALIVE_BUTTON": {
             "description": "Set the Botton",
             "required": true,
-            "value": "ʜɪ/ʜᴇʟᴏ"
+            "value": "ʜɪ!ʜᴇʟᴏ"
         },
         "DIALOGUE": {
             "description": "set the Dialouge",
