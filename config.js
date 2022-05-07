@@ -65,6 +65,8 @@ module.exports = {
     BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
+    INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/jasil_xo' : process.env.INSTA_LINK,
+    GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     WEL_GIF: process.env.WEL_GIF === undefined ? 'https://i.imgur.com/nErXUGj.mp4' : process.env.WEL_GIF,
     GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.GIF_BYE,
