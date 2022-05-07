@@ -129,7 +129,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⬇️Installing plugins...')
+            chalk.blueBright.italic('Alexa is working!♥️...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
