@@ -12,7 +12,6 @@ if (Config.WORKTYPE == 'private') {
 
     Alexa.addCommand({pattern: 'xxxtentacion', fromMe: true, desc: 'random xxxtentacion images'}, (async (message, match) => {
     var img = await skbuffer(Config.LOGOSK)
-
     var r_text = new Array ();
 
 r_text[0] = "https://telegra.ph/file/68b67c927b31143670e3d.jpg";
@@ -52,7 +51,7 @@ var i = Math.floor(15*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALL}
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
     }));
 
@@ -61,8 +60,7 @@ var i = Math.floor(15*Math.random())
 else if (Config.WORKTYPE == 'public') {
 
     Alexa.addCommand({pattern: 'xxxtentacion', fromMe: false, desc:'random xxxtentacion images '}, (async (message, match) => {
-    var img = await skbuffer(Config.LOGOSK)
-    
+    var img = await skbuffer(Config.LOGOSK)    
     var r_text = new Array ();
 
 r_text[0] = "https://telegra.ph/file/68b67c927b31143670e3d.jpg";
@@ -102,6 +100,8 @@ r_text[15] = "https://telegra.ph/file/00a4732edf86b425ecdea.jpg";
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
+    await message.sendMessage(Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 123,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
-}));
+    }));
+
+}
